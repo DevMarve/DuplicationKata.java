@@ -2,11 +2,6 @@ package org.learnwithllew.duplicationkata;
 
 import org.approvaltests.Approvals;
 import org.junit.jupiter.api.Test;
-import org.learnwithllew.duplicationkata.Lesson1Straight;
-import org.learnwithllew.duplicationkata.Lesson21;
-import org.learnwithllew.duplicationkata.Lesson2Variable;
-import org.learnwithllew.duplicationkata.Lesson31;
-import org.learnwithllew.duplicationkata.Lesson3HigherOrderFunctions;
 
 public class RegressionTest
 {
