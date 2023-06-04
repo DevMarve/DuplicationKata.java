@@ -15,7 +15,7 @@ public class RegressionTest
   @Test
   public void testBeer()
   {
-    Lesson2Variable song = new Lesson2Variable();
+    BottlesOfBeerSong song = new BottlesOfBeerSong();
     song.singBottlesOfBeer();
     Approvals.verify(song.song);
   }
