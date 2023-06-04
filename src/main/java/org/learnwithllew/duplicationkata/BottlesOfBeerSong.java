@@ -5,9 +5,9 @@ public class BottlesOfBeerSong extends Song
   private static final String BOTTLES_OF_BEER = "bottles of beer";
   private static final String BOTTLES_OF_BEER_ON_THE_WALL = BOTTLES_OF_BEER + " on the wall";
   private static final String TAKE_ONE_DOWN_PASS_IT_AROUND = "Take one down, pass it around";
-  private static final String firstRound = "100";
-  private static final String secondRound = "99";
-  private static final String thirdRound = "98";
+  private static final int firstRound = 100;
+  private static final int secondRound = firstRound-1;
+  private static final int thirdRound = secondRound-1;
 
   public void singBottlesOfBeer()
   {
