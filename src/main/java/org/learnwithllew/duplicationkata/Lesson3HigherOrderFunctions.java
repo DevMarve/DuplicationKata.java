@@ -4,25 +4,30 @@ public class Lesson3HigherOrderFunctions extends Song
 {
   public void singCheers()
   {
-    int number = 2;
-    sing(number + "! ");
-    number = number + 2;
-    sing(number + "! ");
-    number = number + 2;
-    sing(number + "! ");
-    number = number + 2;
-    sing(number + "! ");
+    singEven();
     sing("Who do we appreciate?");
-    number = 17;
-    sing(number + "! ");
-    number = getNextPrime(number);
-    sing(number + "! ");
-    number = getNextPrime(number);
-    sing(number + "! ");
-    number = getNextPrime(number);
-    sing(number + "! ");
+    singPrime();
     sing("These are the primes, that we find fine!");
+
   }
+
+  private void singEven() {
+    for (int number = 2; number<=8; number=number+2) {
+      singNumber(number);
+    }
+  }
+
+  private void singPrime() {
+    for (int i = 0, number = 17; i<=3; i++) {
+      singNumber(number);
+      number = getNextPrime(number);
+    }
+  }
+
+  private void singNumber(int number) {
+    sing(number + "! ");
+  }
+
   private int getNextPrime(int number)
   {
     switch (number)
