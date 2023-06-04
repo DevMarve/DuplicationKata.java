@@ -8,7 +8,7 @@ public class RegressionTest
   @Test
   public void testCat()
   {
-    Lesson1Straight song = new Lesson1Straight();
+    CatSong song = new CatSong();
     song.singCatSong();
     Approvals.verify(song.song);
   }
