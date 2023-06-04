@@ -4,40 +4,14 @@ public class Lesson21 extends Song
 {
   public void singSong(int style, String... names)
   {
-    switch (style)
-    {
-      case 1 :
-        for (String name : names)
-        {
-          if (name.startsWith("L", 0))
-          {
-            sing("Hip Hip Horray! For " + name);
-          }
-          else
-          {
-            sing("Hello " + name + ", it's nice to meet you.");
-          }
-        }
-        break;
-      case 2 :
-        for (String name : names)
-        {
-          if (name.startsWith("am", 1))
-          {
-            sing("Say yeah! Say yo! Say " + name);
-          }
-          else
-          {
-            sing("Hello " + name + ", it's nice to meet you.");
-          }
-        }
-        break;
-      case 3 :
-        for (String name : names)
-        {
-          sing("Hello " + name + ", it's nice to meet you.");
-        }
-        break;
+    for (String name: names) {
+      if (style == 1 && name.startsWith("L", 0)) {
+        sing("Hip Hip Horray! For " + name);
+      } else if (style == 2 && name.startsWith("am", 1)) {
+        sing("Say yeah! Say yo! Say " + name);
+      } else {
+        sing("Hello " + name + ", it's nice to meet you.");
+      }
     }
   }
 }
